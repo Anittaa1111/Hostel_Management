@@ -1,0 +1,11 @@
+.user-management-page {
+  min-height: calc(100vh - 70px);
+  padding: 40px 0;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-x: auto;
+}

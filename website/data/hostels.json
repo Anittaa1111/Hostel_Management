@@ -1,0 +1,686 @@
+{
+  "hostels": [
+    {
+      "id": 1,
+      "name": "Sunshine Hostel",
+      "slug": "sunshine-hostel",
+      "location": "Boring Road, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800001",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 8500,
+      "rating": 4.8,
+      "reviews": 324,
+      "images": [
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Lunch",
+        "Dinner",
+        "24/7 Reception",
+        "Laundry",
+        "AC Rooms",
+        "Attached Bathroom",
+        "Study Table",
+        "Wardrobe"
+      ],
+      "type": "Mixed",
+      "gender": "Co-ed",
+      "roomTypes": [
+        {
+          "type": "Single Room",
+          "beds": 1,
+          "price": 12000,
+          "available": 2
+        },
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 9000,
+          "available": 5
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 8500,
+          "available": 8
+        }
+      ],
+      "distance": "0.5 km from center",
+      "nearbyPlaces": ["Railway Station - 2 km", "Airport - 8 km", "Market - 500m"],
+      "rules": [
+        "No smoking inside premises",
+        "Visitors allowed till 8 PM",
+        "Maintain cleanliness",
+        "Respect quiet hours (10 PM - 6 AM)"
+      ],
+      "description": "A well-maintained hostel with modern amenities in the heart of Patna. Perfect for students and working professionals.",
+      "contact": {
+        "phone": "+91-9876543210",
+        "email": "sunshine@hostels.com",
+        "whatsapp": "+91-9876543210"
+      },
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Urban Stay Hostel",
+      "slug": "urban-stay-hostel",
+      "location": "Kankarbagh, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800020",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 7500,
+      "rating": 4.6,
+      "reviews": 256,
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Kitchen",
+        "Lounge",
+        "Parking",
+        "Common TV",
+        "Water Cooler",
+        "Power Backup",
+        "Study Room"
+      ],
+      "type": "Boys",
+      "gender": "Boys Only",
+      "roomTypes": [
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 8000,
+          "available": 3
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 7500,
+          "available": 6
+        },
+        {
+          "type": "Four Sharing",
+          "beds": 4,
+          "price": 6500,
+          "available": 4
+        }
+      ],
+      "distance": "1.2 km from center",
+      "nearbyPlaces": ["College - 1 km", "Hospital - 800m", "Shopping Complex - 1.5 km"],
+      "rules": [
+        "No alcohol allowed",
+        "Entry gates close at 11 PM",
+        "Keep personal belongings secure"
+      ],
+      "description": "Modern hostel facilities with a focus on student life. Great community and study environment.",
+      "contact": {
+        "phone": "+91-9876543211",
+        "email": "urban@hostels.com",
+        "whatsapp": "+91-9876543211"
+      },
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Elite Girls Hostel",
+      "slug": "elite-girls-hostel",
+      "location": "Patliputra Colony, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800013",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 10000,
+      "rating": 4.9,
+      "reviews": 412,
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "All Meals",
+        "24/7 Security",
+        "CCTV",
+        "AC Rooms",
+        "Laundry",
+        "Hot Water",
+        "Gym",
+        "Garden",
+        "Library"
+      ],
+      "type": "Girls",
+      "gender": "Girls Only",
+      "roomTypes": [
+        {
+          "type": "Single Room",
+          "beds": 1,
+          "price": 15000,
+          "available": 1
+        },
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 11000,
+          "available": 4
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 10000,
+          "available": 6
+        }
+      ],
+      "distance": "Beach front",
+      "nearbyPlaces": ["University - 1.5 km", "Mall - 2 km", "Hospital - 1 km"],
+      "rules": [
+        "Strict entry timings",
+        "No male visitors",
+        "ID proof mandatory",
+        "Monthly parents meeting"
+      ],
+      "description": "Premium girls hostel with top-notch security and facilities. A safe haven for female students and professionals.",
+      "contact": {
+        "phone": "+91-9876543212",
+        "email": "elite@hostels.com",
+        "whatsapp": "+91-9876543212"
+      },
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": 4,
+      "name": "Professional Stay",
+      "slug": "professional-stay",
+      "location": "Fraser Road, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800001",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 12000,
+      "rating": 4.7,
+      "reviews": 189,
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Co-working Space",
+        "Meeting Room",
+        "All Meals",
+        "Laundry",
+        "Housekeeping",
+        "AC",
+        "Parking",
+        "Gym",
+        "Rooftop Terrace"
+      ],
+      "type": "Mixed",
+      "gender": "Co-ed",
+      "roomTypes": [
+        {
+          "type": "Single Room",
+          "beds": 1,
+          "price": 14000,
+          "available": 3
+        },
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 12000,
+          "available": 4
+        }
+      ],
+      "distance": "2.3 km from center",
+      "nearbyPlaces": ["IT Park - 1 km", "Metro Station - 500m", "Restaurants - 300m"],
+      "rules": [
+        "Professional environment maintained",
+        "Guest policy available",
+        "24/7 access with keycard"
+      ],
+      "description": "Ideal for working professionals with co-working spaces and modern amenities. Perfect work-life balance.",
+      "contact": {
+        "phone": "+91-9876543213",
+        "email": "professional@hostels.com",
+        "whatsapp": "+91-9876543213"
+      },
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": 5,
+      "name": "Budget Friendly Hostel",
+      "slug": "budget-friendly-hostel",
+      "location": "Rajendra Nagar, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800016",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 6000,
+      "rating": 4.5,
+      "reviews": 367,
+      "images": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Breakfast",
+        "Common Kitchen",
+        "Study Area",
+        "Water Purifier",
+        "Security",
+        "Common Bathroom"
+      ],
+      "type": "Boys",
+      "gender": "Boys Only",
+      "roomTypes": [
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 6500,
+          "available": 8
+        },
+        {
+          "type": "Four Sharing",
+          "beds": 4,
+          "price": 6000,
+          "available": 10
+        },
+        {
+          "type": "Six Sharing",
+          "beds": 6,
+          "price": 5000,
+          "available": 5
+        }
+      ],
+      "distance": "0.8 km from center",
+      "nearbyPlaces": ["College - 500m", "Bus Stand - 1 km", "Market - 800m"],
+      "rules": [
+        "Maintain cleanliness",
+        "No loud music after 10 PM",
+        "Visitors till 7 PM only"
+      ],
+      "description": "Affordable hostel perfect for students on a budget. Clean, safe, and well-maintained.",
+      "contact": {
+        "phone": "+91-9876543214",
+        "email": "budget@hostels.com",
+        "whatsapp": "+91-9876543214"
+      },
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": 6,
+      "name": "Premium Comfort Stay",
+      "slug": "premium-comfort-stay",
+      "location": "Bailey Road, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800014",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 15000,
+      "rating": 4.8,
+      "reviews": 198,
+      "images": [
+        "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?w=800&q=80",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "All Meals",
+        "AC Rooms",
+        "Attached Bathroom",
+        "Gym",
+        "Swimming Pool",
+        "Housekeeping",
+        "Laundry",
+        "Gaming Zone",
+        "Mini Theater",
+        "Spa",
+        "Parking"
+      ],
+      "type": "Girls",
+      "gender": "Girls Only",
+      "roomTypes": [
+        {
+          "type": "Single Room",
+          "beds": 1,
+          "price": 18000,
+          "available": 2
+        },
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 15000,
+          "available": 3
+        }
+      ],
+      "distance": "1.5 km from center",
+      "nearbyPlaces": ["Shopping Mall - 500m", "Cinema - 800m", "University - 2 km"],
+      "rules": [
+        "Premium membership benefits",
+        "24/7 access",
+        "Guest policy with prior notice",
+        "Maintain facility standards"
+      ],
+      "description": "Luxury hostel with 5-star amenities. Experience comfortable living with premium facilities.",
+      "contact": {
+        "phone": "+91-9876543215",
+        "email": "premium@hostels.com",
+        "whatsapp": "+91-9876543215"
+      },
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": 7,
+      "name": "Student Hub Hostel",
+      "slug": "student-hub-hostel",
+      "location": "Danapur, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "801503",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 7000,
+      "rating": 4.6,
+      "reviews": 278,
+      "images": [
+        "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=800&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Library",
+        "Study Hall",
+        "Meals",
+        "Common Room",
+        "Sports Facilities",
+        "Medical Aid",
+        "Counseling"
+      ],
+      "type": "Mixed",
+      "gender": "Co-ed",
+      "roomTypes": [
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 8000,
+          "available": 6
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 7000,
+          "available": 8
+        },
+        {
+          "type": "Four Sharing",
+          "beds": 4,
+          "price": 6200,
+          "available": 5
+        }
+      ],
+      "distance": "0.3 km from center",
+      "nearbyPlaces": ["Coaching Center - 200m", "Library - 300m", "College - 1 km"],
+      "rules": [
+        "Study-friendly environment",
+        "Group study sessions allowed",
+        "No disturbances during exam weeks"
+      ],
+      "description": "Perfect for serious students with excellent study facilities and academic support.",
+      "contact": {
+        "phone": "+91-9876543216",
+        "email": "studenthub@hostels.com",
+        "whatsapp": "+91-9876543216"
+      },
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": 8,
+      "name": "Green Valley Hostel",
+      "slug": "green-valley-hostel",
+      "location": "Digha, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800011",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 9000,
+      "rating": 4.7,
+      "reviews": 234,
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Garden",
+        "Yoga Classes",
+        "All Meals",
+        "AC Optional",
+        "Parking",
+        "Meditation Hall",
+        "Organic Food"
+      ],
+      "type": "Mixed",
+      "gender": "Co-ed",
+      "roomTypes": [
+        {
+          "type": "Single Room",
+          "beds": 1,
+          "price": 11000,
+          "available": 2
+        },
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 9000,
+          "available": 5
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 8000,
+          "available": 4
+        }
+      ],
+      "distance": "Lake front",
+      "nearbyPlaces": ["Park - 100m", "Gym - 500m", "Market - 1 km"],
+      "rules": [
+        "Eco-friendly practices encouraged",
+        "Smoking not allowed",
+        "Respect nature and surroundings"
+      ],
+      "description": "Nature-friendly hostel with a peaceful environment. Perfect for those seeking tranquility.",
+      "contact": {
+        "phone": "+91-9876543217",
+        "email": "greenvalley@hostels.com",
+        "whatsapp": "+91-9876543217"
+      },
+      "featured": false,
+      "verified": true
+    },
+    {
+      "id": 9,
+      "name": "Tech Hub Residence",
+      "slug": "tech-hub-residence",
+      "location": "Beur, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800002",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 11000,
+      "rating": 4.8,
+      "reviews": 345,
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "Coworking Space",
+        "Meeting Rooms",
+        "Cafeteria",
+        "All Meals",
+        "Laundry",
+        "AC Rooms",
+        "Power Backup",
+        "Parking",
+        "Gaming Zone"
+      ],
+      "type": "Boys",
+      "gender": "Boys Only",
+      "roomTypes": [
+        {
+          "type": "Single Room",
+          "beds": 1,
+          "price": 13000,
+          "available": 4
+        },
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 11000,
+          "available": 6
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 9500,
+          "available": 3
+        }
+      ],
+      "distance": "0.1 km from center",
+      "nearbyPlaces": ["Tech Park - 500m", "Startup Hub - 800m", "Cafe - 200m"],
+      "rules": [
+        "Work-friendly environment",
+        "24/7 access",
+        "Networking events monthly"
+      ],
+      "description": "Modern hostel designed for tech professionals and entrepreneurs. High-speed internet and coworking spaces.",
+      "contact": {
+        "phone": "+91-9876543218",
+        "email": "techhub@hostels.com",
+        "whatsapp": "+91-9876543218"
+      },
+      "featured": true,
+      "verified": true
+    },
+    {
+      "id": 10,
+      "name": "Central Plaza Hostel",
+      "slug": "central-plaza-hostel",
+      "location": "Patna City, Patna",
+      "city": "Patna",
+      "state": "Bihar",
+      "pincode": "800008",
+      "coordinates": {
+        "lat": 25.5941,
+        "lng": 85.1376
+      },
+      "price": 8000,
+      "rating": 4.5,
+      "reviews": 290,
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+        "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+      ],
+      "amenities": [
+        "Free WiFi",
+        "All Meals",
+        "AC Available",
+        "Laundry",
+        "TV Room",
+        "Indoor Games",
+        "Security",
+        "Water Purifier"
+      ],
+      "type": "Girls",
+      "gender": "Girls Only",
+      "roomTypes": [
+        {
+          "type": "Double Sharing",
+          "beds": 2,
+          "price": 9000,
+          "available": 5
+        },
+        {
+          "type": "Triple Sharing",
+          "beds": 3,
+          "price": 8000,
+          "available": 7
+        },
+        {
+          "type": "Four Sharing",
+          "beds": 4,
+          "price": 7000,
+          "available": 4
+        }
+      ],
+      "distance": "0.5 km from Railway Station",
+      "nearbyPlaces": ["Railway Station - 500m", "Market - 300m", "Hospital - 1 km"],
+      "rules": [
+        "Strict security protocols",
+        "No outside visitors after 7 PM",
+        "Keep rooms clean"
+      ],
+      "description": "Centrally located girls hostel with easy access to all major areas. Safe and comfortable.",
+      "contact": {
+        "phone": "+91-9876543219",
+        "email": "centralplaza@hostels.com",
+        "whatsapp": "+91-9876543219"
+      },
+      "featured": false,
+      "verified": true
+    }
+  ]
+}
