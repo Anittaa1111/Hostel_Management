@@ -51,7 +51,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Premium <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Amenities</span>
+            Premium <span className="text-slate-300 font-bold">Amenities</span>
           </h2>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
             Experience comfortable living with modern facilities designed for your convenience
@@ -66,10 +66,10 @@ export default function Features() {
                 key={index}
                 className="group p-6 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center mb-4 group-hover:from-purple-600/30 group-hover:to-blue-600/30 transition-all group-hover:scale-110">
-                  <Icon className="w-7 h-7 text-purple-400 group-hover:text-blue-400 transition-colors" />
+                <div className="w-14 h-14 rounded-xl bg-slate-700/50 flex items-center justify-center mb-4 group-hover:bg-slate-600/50 transition-all group-hover:scale-110">
+                  <Icon className="w-7 h-7 text-slate-300 group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 transition-all">
+                <h3 className="text-xl font-semibold text-white mb-2">
                   {feature.title}
                 </h3>
                 <p className="text-white/60 text-sm">{feature.description}</p>

@@ -1,10 +1,28 @@
 {
+  "patnaAreas": [
+    "Boring Road",
+    "Kankarbagh",
+    "Patliputra Colony",
+    "Fraser Road",
+    "Rajendra Nagar",
+    "Bailey Road",
+    "Danapur",
+    "Digha",
+    "Beur",
+    "Patna City",
+    "Ashok Rajpath",
+    "Exhibition Road",
+    "Budh Marg",
+    "Gandhi Maidan",
+    "Anisabad"
+  ],
   "hostels": [
     {
       "id": 1,
       "name": "Sunshine Hostel",
       "slug": "sunshine-hostel",
       "location": "Boring Road, Patna",
+      "area": "Boring Road",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800001",
@@ -14,7 +32,7 @@
       },
       "price": 8500,
       "rating": 4.8,
-      "reviews": 324,
+      "totalReviews": 324,
       "images": [
         "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
@@ -32,8 +50,46 @@
         "Study Table",
         "Wardrobe"
       ],
+      "facilities": {
+        "wifi": true,
+        "meals": true,
+        "laundry": true,
+        "ac": true,
+        "parking": false,
+        "gym": false,
+        "security": true,
+        "powerBackup": true,
+        "cctv": true,
+        "commonArea": true
+      },
       "type": "Mixed",
       "gender": "Co-ed",
+      "studentReviews": [
+        {
+          "id": 1,
+          "name": "Rahul Kumar",
+          "rating": 5,
+          "date": "2026-01-15",
+          "comment": "Excellent hostel with great facilities. The food is amazing and staff is very cooperative. Highly recommended!",
+          "verified": true
+        },
+        {
+          "id": 2,
+          "name": "Priya Singh",
+          "rating": 4.5,
+          "date": "2026-01-10",
+          "comment": "Nice place to stay. Clean rooms and good ambiance. WiFi speed could be better.",
+          "verified": true
+        },
+        {
+          "id": 3,
+          "name": "Amit Sharma",
+          "rating": 5,
+          "date": "2025-12-28",
+          "comment": "Best hostel in Patna! Safe, clean, and very affordable. Been living here for 6 months.",
+          "verified": true
+        }
+      ],
       "roomTypes": [
         {
           "type": "Single Room",
@@ -63,10 +119,12 @@
         "Respect quiet hours (10 PM - 6 AM)"
       ],
       "description": "A well-maintained hostel with modern amenities in the heart of Patna. Perfect for students and working professionals.",
+      "fullDescription": "Sunshine Hostel is one of the most sought-after hostels in Boring Road area. With state-of-the-art facilities and a friendly environment, we provide a home away from home experience. Our hostel features spacious rooms with attached bathrooms, 24/7 security with CCTV surveillance, high-speed WiFi connectivity, and delicious home-cooked meals. Located in the prime area of Boring Road, students have easy access to educational institutions, coaching centers, and shopping areas.",
       "contact": {
         "phone": "+91-9876543210",
         "email": "sunshine@hostels.com",
-        "whatsapp": "+91-9876543210"
+        "whatsapp": "+91-9876543210",
+        "website": "www.sunshinehostel.com"
       },
       "featured": true,
       "verified": true
@@ -76,6 +134,7 @@
       "name": "Urban Stay Hostel",
       "slug": "urban-stay-hostel",
       "location": "Kankarbagh, Patna",
+      "area": "Kankarbagh",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800020",
@@ -85,7 +144,7 @@
       },
       "price": 7500,
       "rating": 4.6,
-      "reviews": 256,
+      "totalReviews": 256,
       "images": [
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
@@ -144,6 +203,7 @@
       "name": "Elite Girls Hostel",
       "slug": "elite-girls-hostel",
       "location": "Patliputra Colony, Patna",
+      "area": "Patliputra Colony",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800013",
@@ -153,7 +213,7 @@
       },
       "price": 10000,
       "rating": 4.9,
-      "reviews": 412,
+      "totalReviews": 412,
       "images": [
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
         "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
@@ -215,6 +275,7 @@
       "name": "Professional Stay",
       "slug": "professional-stay",
       "location": "Fraser Road, Patna",
+      "area": "Fraser Road",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800001",
@@ -224,7 +285,7 @@
       },
       "price": 12000,
       "rating": 4.7,
-      "reviews": 189,
+      "totalReviews": 189,
       "images": [
         "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
         "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
@@ -279,6 +340,7 @@
       "name": "Budget Friendly Hostel",
       "slug": "budget-friendly-hostel",
       "location": "Rajendra Nagar, Patna",
+      "area": "Rajendra Nagar",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800016",
@@ -288,7 +350,7 @@
       },
       "price": 6000,
       "rating": 4.5,
-      "reviews": 367,
+      "totalReviews": 367,
       "images": [
         "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
@@ -346,6 +408,7 @@
       "name": "Premium Comfort Stay",
       "slug": "premium-comfort-stay",
       "location": "Bailey Road, Patna",
+      "area": "Bailey Road",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800014",
@@ -355,7 +418,7 @@
       },
       "price": 15000,
       "rating": 4.8,
-      "reviews": 198,
+      "totalReviews": 198,
       "images": [
         "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?w=800&q=80",
         "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
@@ -413,6 +476,7 @@
       "name": "Student Hub Hostel",
       "slug": "student-hub-hostel",
       "location": "Danapur, Patna",
+      "area": "Danapur",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "801503",
@@ -422,7 +486,7 @@
       },
       "price": 7000,
       "rating": 4.6,
-      "reviews": 278,
+      "totalReviews": 278,
       "images": [
         "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?w=800&q=80",
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
@@ -481,6 +545,7 @@
       "name": "Green Valley Hostel",
       "slug": "green-valley-hostel",
       "location": "Digha, Patna",
+      "area": "Digha",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800011",
@@ -490,7 +555,7 @@
       },
       "price": 9000,
       "rating": 4.7,
-      "reviews": 234,
+      "totalReviews": 234,
       "images": [
         "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
         "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
@@ -549,6 +614,7 @@
       "name": "Tech Hub Residence",
       "slug": "tech-hub-residence",
       "location": "Beur, Patna",
+      "area": "Beur",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800002",
@@ -558,7 +624,7 @@
       },
       "price": 11000,
       "rating": 4.8,
-      "reviews": 345,
+      "totalReviews": 345,
       "images": [
         "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
         "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",
@@ -619,6 +685,7 @@
       "name": "Central Plaza Hostel",
       "slug": "central-plaza-hostel",
       "location": "Patna City, Patna",
+      "area": "Patna City",
       "city": "Patna",
       "state": "Bihar",
       "pincode": "800008",
@@ -628,7 +695,7 @@
       },
       "price": 8000,
       "rating": 4.5,
-      "reviews": 290,
+      "totalReviews": 290,
       "images": [
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
         "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80",

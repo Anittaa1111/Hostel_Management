@@ -14,11 +14,11 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center shadow-lg">
-                <Building2 className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-xl bg-slate-700 flex items-center justify-center shadow-lg">
+                <Home className="w-6 h-6 text-white" />
               </div>
-              <span className="text-white font-bold text-xl hidden sm:block bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                HostelHub
+              <span className="text-white font-bold text-xl hidden sm:block">
+                HostelWala
               </span>
             </Link>
 
@@ -26,26 +26,26 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-8">
               <Link
                 href="/"
-                className="text-white hover:text-purple-400 transition-colors font-medium flex items-center gap-2"
+                className="text-white hover:text-slate-300 transition-colors font-medium flex items-center gap-2"
               >
                 <Home className="w-4 h-4" />
                 Home
               </Link>
               <Link
                 href="/browsehostel"
-                className="text-white hover:text-purple-400 transition-colors font-medium"
+                className="text-white hover:text-slate-300 transition-colors font-medium"
               >
-                Browse Hostels
+                Hostels
               </Link>
               <Link
                 href="/about"
-                className="text-white hover:text-purple-400 transition-colors font-medium"
+                className="text-white hover:text-slate-300 transition-colors font-medium"
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-white hover:text-purple-400 transition-colors font-medium"
+                className="text-white hover:text-slate-300 transition-colors font-medium"
               >
                 Contact
               </Link>
@@ -53,13 +53,16 @@ export default function Navbar() {
 
             {/* Right Side Icons */}
             <div className="flex items-center gap-3">
-              <button className="hidden sm:block p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-all">
+              <Link
+                href="/wishlist"
+                className="hidden sm:block p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-all"
+              >
                 <Heart className="w-5 h-5 text-white" />
-              </button>
+              </Link>
               <button className="hidden sm:block p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-all">
                 <Bell className="w-5 h-5 text-white" />
               </button>
-              <button className="px-4 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-all flex items-center gap-2">
+              <button className="px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-white font-medium transition-all flex items-center gap-2">
                 <User className="w-4 h-4" />
                 <span className="hidden sm:inline">Sign In</span>
               </button>
@@ -84,28 +87,36 @@ export default function Navbar() {
               <div className="flex flex-col gap-3">
                 <Link
                   href="/"
-                  className="text-white hover:text-purple-400 transition-colors font-medium py-2"
+                  className="text-white hover:text-slate-300 transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
                 </Link>
                 <Link
                   href="/browsehostel"
-                  className="text-white hover:text-purple-400 transition-colors font-medium py-2"
+                  className="text-white hover:text-slate-300 transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Browse Hostels
+                  Hostels
+                </Link>
+                <Link
+                  href="/wishlist"
+                  className="text-white hover:text-slate-300 transition-colors font-medium py-2 flex items-center gap-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <Heart className="w-4 h-4" />
+                  Wishlist
                 </Link>
                 <Link
                   href="/about"
-                  className="text-white hover:text-purple-400 transition-colors font-medium py-2"
+                  className="text-white hover:text-slate-300 transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-white hover:text-purple-400 transition-colors font-medium py-2"
+                  className="text-white hover:text-slate-300 transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact

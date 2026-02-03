@@ -1,185 +1,316 @@
+﻿'use client';
+
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import { motion } from 'framer-motion';
+import { Shield, Zap, Users, Heart, Award, TrendingUp, Target, Sparkles, CheckCircle2, MapPin, Clock, Headphones } from 'lucide-react';
 import React from 'react';
 
 export default function AboutPage() {
+  const features = [
+    {
+      icon: Shield,
+      title: 'Verified Hostels',
+      description: 'Every hostel undergoes strict verification to ensure safety and quality standards',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      icon: Zap,
+      title: 'Instant Booking',
+      description: 'Book your perfect hostel in seconds with our streamlined booking process',
+      color: 'from-purple-500 to-pink-500'
+    },
+    {
+      icon: Users,
+      title: 'Student Community',
+      description: 'Connect with fellow students and build lasting friendships in verified hostels',
+      color: 'from-orange-500 to-red-500'
+    },
+    {
+      icon: Heart,
+      title: 'Wishlist & Compare',
+      description: 'Save your favorite hostels and compare features to make the best choice',
+      color: 'from-green-500 to-emerald-500'
+    },
+    {
+      icon: MapPin,
+      title: 'Smart Location Search',
+      description: 'Find hostels near your college with integrated maps and area filters',
+      color: 'from-indigo-500 to-blue-500'
+    },
+    {
+      icon: Headphones,
+      title: '24/7 Support',
+      description: 'Round-the-clock assistance via phone, email, and WhatsApp',
+      color: 'from-pink-500 to-rose-500'
+    }
+  ];
+
+  const stats = [
+    { number: '500+', label: 'Verified Hostels', icon: Award },
+    { number: '10K+', label: 'Happy Students', icon: Users },
+    { number: '15+', label: 'Areas Covered', icon: MapPin },
+    { number: '4.8/5', label: 'Average Rating', icon: Sparkles }
+  ];
+
+  const values = [
+    {
+      title: 'Trust & Transparency',
+      description: 'We believe in complete transparency. Every hostel listing includes verified reviews, actual photos, and honest pricing.',
+      icon: Shield
+    },
+    {
+      title: 'Student-First Approach',
+      description: 'Built by students, for students. We understand your needs and deliver exactly what matters to you.',
+      icon: Target
+    },
+    {
+      title: 'Innovation & Technology',
+      description: 'Cutting-edge features like AI-powered recommendations, smart filters, and instant booking make your search effortless.',
+      icon: Zap
+    }
+  ];
+
   return (
     <>
-    <Navbar />
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Hero Section */}
-      <section className="relative min-h-[32rem] py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl mt-18 lg:text-6xl font-bold mb-6">
-            About Us
-          </h1>
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Your trusted partner in finding the perfect hostel accommodation
-          </p>
-        </div>
-      </section>
+      <Navbar />
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+        {/* Hero Section */}
+        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
+          <div className="absolute inset-0 bg-slate-800/30"></div>
+          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center max-w-4xl mx-auto"
+            >
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.2, type: "spring" }}
+                className="inline-block mb-6"
+              >
+                <span className="px-6 py-3 bg-slate-700/50 backdrop-blur-sm border border-slate-600 rounded-full text-slate-300 text-sm font-semibold">
+                  🚀 Revolutionizing Student Accommodation
+                </span>
+              </motion.div>
+              
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+                Your Journey to the
+                <span className="block text-slate-300 font-bold">
+                  Perfect Home
+                </span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
+                We're not just a hostel booking platform - we're your trusted companion in finding 
+                safe, comfortable, and affordable accommodation in Patna.
+              </p>
 
-      {/* Mission Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-                Our Mission
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a
+                  href="/browsehostel"
+                  className="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-2xl transform hover:scale-105"
+                >
+                  Explore Hostels
+                </a>
+                <a
+                  href="/contact"
+                  className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/20 hover:bg-white/20 text-white font-semibold rounded-xl transition-all"
+                >
+                  Get in Touch
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-slate-600/20 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-slate-700/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="py-20 relative">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {stats.map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 text-center hover:border-slate-500 transition-all group"
+                >
+                  <stat.icon className="w-12 h-12 mx-auto mb-4 text-slate-400 group-hover:scale-110 transition-transform" />
+                  <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
+                  <div className="text-gray-400">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Section */}
+        <section className="py-20 relative">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="max-w-4xl mx-auto"
+            >
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                  Our <span className="text-slate-300 font-bold">Story</span>
+                </h2>
+                <p className="text-xl text-gray-300">
+                  Born from the frustration of finding quality student accommodation
+                </p>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-8 md:p-12">
+                <div className="prose prose-invert prose-lg max-w-none">
+                  <p className="text-gray-300 leading-relaxed mb-6">
+                    HostelWala was founded in 2025 by a group of students who experienced firsthand the challenges 
+                    of finding safe, affordable, and quality hostel accommodation in Patna. We spent countless 
+                    hours visiting hostels, dealing with unverified listings, and struggling with outdated booking systems.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed mb-6">
+                    We knew there had to be a better way. So we built HostelWala - a platform that combines 
+                    cutting-edge technology with genuine care for students' needs. Today, we're proud to serve 
+                    thousands of students across Patna, helping them find their perfect home away from home.
+                  </p>
+                  <p className="text-gray-300 leading-relaxed">
+                    Our mission is simple: <span className="text-slate-300 font-semibold">make hostel hunting 
+                    hassle-free, transparent, and enjoyable</span>. We verify every listing, empower students 
+                    with honest reviews, and provide tools that make comparison and booking effortless.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Features Grid */}
+        <section className="py-20 relative">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Why Students <span className="text-slate-300 font-bold">Choose Us</span>
               </h2>
-              <p className="text-lg text-gray-700 mb-4">
-                We are dedicated to revolutionizing the way students and travelers find their ideal hostel accommodations. Our platform connects you with the best hostels, ensuring a seamless booking experience and comfortable stays.
-              </p>
-              <p className="text-lg text-gray-700">
-                Founded with a vision to simplify hostel management and booking, we strive to provide transparent, reliable, and user-friendly services to both hostel owners and residents.
+              <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                Features designed specifically for student needs, backed by innovation
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">What We Offer</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Verified hostel listings with real reviews</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Easy online booking and payment system</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>24/7 customer support</span>
-                </li>
-                <li className="flex items-start">
-                  <svg className="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Comprehensive hostel management tools</span>
-                </li>
-              </ul>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((feature, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-transparent hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-10 transition-opacity`}></div>
+                  
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                    <feature.icon className="w-8 h-8 text-white" />
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
+                  <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Values Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-            Our Core Values
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Trust & Safety</h3>
-              <p className="text-gray-700">
-                We prioritize the safety and security of all our users, ensuring every hostel meets our strict verification standards.
+        {/* Core Values */}
+        <section className="py-20 relative">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                Our Core <span className="text-slate-300 font-bold">Values</span>
+              </h2>
+              <p className="text-xl text-gray-300">
+                Principles that guide everything we do
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Innovation</h3>
-              <p className="text-gray-700">
-                We continuously evolve our platform with cutting-edge technology to provide the best user experience.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Community</h3>
-              <p className="text-gray-700">
-                We build a vibrant community of students, travelers, and hostel owners supporting each other.
-              </p>
+            <div className="max-w-5xl mx-auto space-y-8">
+              {values.map((value, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-blue-500 transition-all group"
+                >
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <value.icon className="w-8 h-8 text-white" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-3">{value.title}</h3>
+                      <p className="text-gray-300 leading-relaxed text-lg">{value.description}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Stats Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-            Our Impact
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">500+</div>
-              <div className="text-gray-700 font-medium">Verified Hostels</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 mb-2">10K+</div>
-              <div className="text-gray-700 font-medium">Happy Students</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-green-600 mb-2">50+</div>
-              <div className="text-gray-700 font-medium">Cities Covered</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-orange-600 mb-2">4.8/5</div>
-              <div className="text-gray-700 font-medium">Average Rating</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Our Story
-          </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-            Started in 2020, our platform was born from the frustration of finding reliable hostel accommodations. What began as a small project has now grown into a comprehensive platform serving thousands of students and travelers across the country.
-          </p>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Today, we continue to grow and improve, driven by our commitment to making hostel searching and booking as seamless as possible. Our team works tirelessly to ensure every user finds their perfect home away from home.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Ready to Find Your Perfect Hostel?
-          </h2>
-          <p className="text-xl text-gray-700 mb-8">
-            Join thousands of satisfied students and travelers who have found their ideal accommodation through our platform.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/"
-              className="px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
+        {/* CTA Section */}
+        <section className="py-20 relative">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="max-w-4xl mx-auto bg-slate-700 rounded-3xl p-12 text-center relative overflow-hidden"
             >
-              Browse Hostels
-            </a>
-            <a
-              href="/contact"
-              className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-            >
-              Contact Us
-            </a>
+              <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+              
+              <div className="relative z-10">
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                  Ready to Find Your Perfect Hostel?
+                </h2>
+                <p className="text-xl text-white/90 mb-8">
+                  Join thousands of students who trust HostelWala for their accommodation needs
+                </p>
+                <div className="flex flex-wrap gap-4 justify-center">
+                  <a
+                    href="/browsehostel"
+                    className="px-8 py-4 bg-white text-slate-800 hover:bg-gray-100 font-semibold rounded-xl transition-all shadow-lg hover:shadow-2xl transform hover:scale-105"
+                  >
+                    Browse Hostels Now
+                  </a>
+                  <a
+                    href="/wishlist"
+                    className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-white font-semibold rounded-xl transition-all flex items-center gap-2"
+                  >
+                    <Heart className="w-5 h-5" />
+                    View Wishlist
+                  </a>
+                </div>
+              </div>
+            </motion.div>
           </div>
-        </div>
-      </section>
-    </div>S
+        </section>
+      </div>
+      <Footer />
     </>
   );
 }

@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
           {/* Right Side - Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">HostelHub</span>?
+              Why Choose <span className="text-slate-300 font-bold">HostelWala</span>?
             </h2>
             <p className="text-lg text-white/70 mb-8">
               We make finding your perfect hostel in Patna simple, safe, and stress-free.

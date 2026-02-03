@@ -21,10 +21,10 @@ export default function Stats() {
                 key={index}
                 className="text-center p-8 rounded-2xl bg-white/5 backdrop-blur-lg border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 group"
               >
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center mx-auto mb-4 group-hover:from-purple-600/30 group-hover:to-blue-600/30 transition-all">
-                  <Icon className="w-8 h-8 text-purple-400 group-hover:scale-110 transition-transform" />
+                <div className="w-16 h-16 rounded-xl bg-slate-700/50 flex items-center justify-center mx-auto mb-4 group-hover:bg-slate-600/50 transition-all">
+                  <Icon className="w-8 h-8 text-slate-300 group-hover:scale-110 transition-transform" />
                 </div>
-                <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-2">
+                <div className="text-4xl font-bold text-white mb-2">
                   {stat.value}
                 </div>
                 <div className="text-white/60 font-medium">{stat.label}</div>

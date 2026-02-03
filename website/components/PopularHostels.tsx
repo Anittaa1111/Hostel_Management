@@ -15,7 +15,7 @@ export default function PopularHostels() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Popular <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">Hostels</span>
+            Popular <span className="text-slate-300 font-bold">Hostels</span>
           </h2>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
             Discover the most loved and trusted hostels with excellent ratings and amenities
@@ -37,7 +37,7 @@ export default function PopularHostels() {
                   alt={hostel.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 px-3 py-1 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-sm font-semibold rounded-full shadow-lg">
+                <div className="absolute top-4 right-4 px-3 py-1 bg-slate-700 text-white text-sm font-semibold rounded-full shadow-lg">
                   {hostel.gender}
                 </div>
                 {hostel.verified && (
@@ -48,7 +48,7 @@ export default function PopularHostels() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-slate-300 transition-colors">
                   {hostel.name}
                 </h3>
 
@@ -89,7 +89,7 @@ export default function PopularHostels() {
 
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
                   <div className="flex items-center gap-1">
-                    <IndianRupee className="w-5 h-5 text-purple-400" />
+                    <IndianRupee className="w-5 h-5 text-slate-400" />
                     <span className="text-2xl font-bold text-white">
                       {hostel.price.toLocaleString()}
                     </span>
@@ -97,7 +97,7 @@ export default function PopularHostels() {
                   </div>
                   <Link 
                     href={`/hostel/${hostel.slug}`}
-                    className="px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold rounded-lg transition-all shadow-md hover:shadow-lg transform hover:scale-105 flex items-center gap-1"
+                    className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-lg transition-all shadow-md hover:shadow-lg transform hover:scale-105 flex items-center gap-1"
                   >
                     View
                     <ArrowRight className="w-4 h-4" />
@@ -112,7 +112,7 @@ export default function PopularHostels() {
         <div className="text-center mt-12">
           <Link
             href="/browsehostel"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             View All Hostels
             <ArrowRight className="w-5 h-5" />

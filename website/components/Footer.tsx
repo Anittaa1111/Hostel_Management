@@ -1,6 +1,6 @@
 'use client';
 
-import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Building2 } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin, Home } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -11,10 +11,10 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
-                <Building2 className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-lg bg-slate-700 flex items-center justify-center">
+                <Home className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">HostelHub</h3>
+              <h3 className="text-2xl font-bold text-white">HostelWala</h3>
             </div>
             <p className="text-white/60 mb-4">
               Your trusted platform for finding perfect hostel accommodations in Patna, Bihar.
@@ -106,21 +106,21 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" />
                 <span className="text-white/60">
                   Boring Road, Patna, Bihar 800001
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-purple-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-slate-400 flex-shrink-0" />
                 <a href="tel:+911234567890" className="text-white/60 hover:text-white transition-colors">
                   +91 123 456 7890
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-purple-400 flex-shrink-0" />
-                <a href="mailto:info@hostelhub.com" className="text-white/60 hover:text-white transition-colors">
-                  info@hostelhub.com
+                <Mail className="w-5 h-5 text-slate-400 flex-shrink-0" />
+                <a href="mailto:info@hostelwala.com" className="text-white/60 hover:text-white transition-colors">
+                  info@hostelwala.com
                 </a>
               </li>
             </ul>
@@ -130,7 +130,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/60 text-sm text-center md:text-left">
-            © 2026 HostelHub. All rights reserved.
+            © 2026 HostelWala. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-white/60 hover:text-white text-sm transition-colors">
