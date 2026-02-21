@@ -155,6 +155,48 @@ export default function HostelDetailPage() {
 
   const displayHostel = hostelData || hostel;
 
+  const handleBooking = async () => {
+    // 1. Get user from storage
+    const storedUser = localStorage.getItem("user");
+
+    if (!storedUser) {
+      alert("Please sign in to book a hostel");
+      window.location.href = "/signin";
+      return;
+    }
+
+    // 2. THE FIX: Guard against null displayHostel
+    if (!displayHostel) {
+      alert("Hostel data is still loading. Please try again in a moment.");
+      return;
+    }
+
+    try {
+      const userData = JSON.parse(storedUser);
+
+      // Now TypeScript knows displayHostel.name is safe to access
+      const response = await fetch(`${API_URL}/auth/book-hostel`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: userData.email,
+          userName: userData.name,
+          hostelName: displayHostel.name,
+          price: displayHostel.price,
+        }),
+      });
+
+      if (response.ok) {
+        alert("Booking confirmed! Check your email for details.");
+      } else {
+        alert("Booking failed. Please try again.");
+      }
+    } catch (error) {
+      console.error("Booking request failed:", error);
+      alert("Could not connect to the server.");
+    }
+  };
+
   if (loading) {
     return (
       <>
@@ -347,7 +389,9 @@ export default function HostelDetailPage() {
                   <p className="text-gray-400">per month</p>
                 </div>
 
-                <button className="w-full py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-xl mb-4">
+                <button 
+                onClick={handleBooking}
+                className="w-full py-4 bg-slate-700 hover:bg-slate-600 text-white font-semibold rounded-xl transition-all shadow-lg hover:shadow-xl mb-4">
                   Book Now
                 </button>
 
