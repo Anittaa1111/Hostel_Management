@@ -65,7 +65,7 @@ export default function PopularHostels() {
                     </span>
                   </div>
                   <span className="text-white/60 text-sm">
-                    ({hostel.reviews} reviews)
+                    ({hostel.id} reviews)
                   </span>
                 </div>
 
