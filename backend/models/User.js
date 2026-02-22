@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['central_authority', 'hostel_authority'],
+    enum: ['central_authority', 'hostel_authority', 'user'],
     default: 'hostel_authority'
   },
   phone: {
