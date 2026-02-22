@@ -131,7 +131,7 @@ router.post("/verify-otp", async (req, res) => {
     });
   } catch (error) {
     console.error("Verification Error:", error);
-    res.status(500).json({ message: "Verification failed" });
+    res.status(500).json({ message: error.message });
   }
 });
 
